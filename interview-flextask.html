@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0%;
+        }
+        header{
+            text-align: center;
+            padding: 50px;
+            text-shadow:  0 0 3px blue, 0 0 5px pink;
+            background-image: linear-gradient(to bottom left, navy,rbp(121, 90, 60),rbg(121, 75, 80ß));
+        }
+        nav{
+            display: flex;
+            background-color: darkgreen;
+        }
+        nav a{
+            color: yellow;
+            padding: 7px 24px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover{
+            background-color: pink;
+            color: black;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 30%;
+            background-color: orange;
+            padding: 20px;
+        }
+        .main{
+            flex: 60%;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+        .img{
+            width: 100%;
+            padding: 20px;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+            background-color: darkturquoise;
+        }
+        @media screen and (max-width: 768px) {
+            .row , nav{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foodie Space</h1>
+        <p>Get ready to have some delicious food!</p>
+        <h5>Contact:+17185829620</h5>
+    </header>
+    <nav>
+     <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Foodie Space</a>
+        <a href="#">Our Menu</a>
+    </nav>
+    <div class="row">
+        <div class="side">
+            <h2>About Us</h2>
+            <p>Information</p>
+            <div class="img">
+                <img src="food.jpeg" alt="img" width="200px" height="200px">
+                <p>We serve range of varieties including continental, mexican, chinese, indian foods which are made of fresh vegetables and maintaining the nutritious facts. Our cuisine serves only vegetarian food. 
+                    Each dish has its unique flavours and methods. They are rich in proteins, vitamins and more. If you like the food. Don't hesitate to eat until you fill up your belly!</p>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Our Menu</h2>
+            <h5>Starters</h5>
+            <ul>
+               <li>Gobi Manchuria</li>
+               <li>Dokla</li>
+               <li>Cottage Cheese Sliders</li>
+               <li>Chole Bhature</li>
+               <li>Roasted Spaghetti</li>
+               <li>Pav Bhaji</li>
+               <li>Babycorn Manchuria</li>
+               <li>Paneer Manchuria</li>
+            </ul>
+            <h5>Main course</h5>
+            <ul>
+               <li>Veg Fried Rice</li>
+               <li>Corn Fried Rice</li>
+               <li>Paneer Biryani</li>
+               <li>Tomato Bath</li>
+               <li>Vaangi Bath</li>
+            </ul>
+       </div>
+   </div>
+   <footer><h2>All rights reserved</h2></footer>
+</body>
+</html>
