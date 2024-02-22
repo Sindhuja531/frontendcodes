@@ -18,7 +18,7 @@ let n2 = {
 printFullName.call(n2, "Hyderabad", "Telangana");
 
 printFullName.apply(n2, ["Hyderabad", "Telangana"]);
-
+q
 //bind method
 let printMyName = printFullName.bind(n, "Warangal", "Telangana");
 console.log(printMyName);
