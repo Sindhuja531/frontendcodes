@@ -1,0 +1,99 @@
+.header{
+    background-color: #EA7773;
+    height: 100px;
+    padding: 10px;
+}
+
+.actions{
+    background-color: #EAF0F1;
+    height: 75px;
+    padding: 20px;
+}
+
+.main-content{
+    margin-top: 10px;
+}
+
+.list-item{
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.3rem 0;
+    padding-left: 1.6rem;
+    padding-top: 0.6rem;
+    display: block;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #eeeeee;
+    text-decoration: none;
+    color: black;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ingredient-card{
+    border: 1px solid #dedfe0;
+    margin: 1rem 0;
+    background: #F7F7F7;
+    color: #333333;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.spanStyle{
+    float: right;
+}
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    #btn-ingredient{
+        float: right;
+    }
+    #add-recepie{
+        margin-right: -15px;
+    }
+    #filter-recepies{
+        margin-left: -15px;
+    }
+}
+
+.edit-actions{
+    background-color: #EAF0F1;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+.content{
+    padding-bottom: 100px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+}

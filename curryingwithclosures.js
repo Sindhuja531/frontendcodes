@@ -8,6 +8,6 @@ let multiply = function(a) {
     }
 }
 
-let multiplyByTwo = multiply(2); // here 2 refers to a value
+let multiplyByTwo = multiply(2); // here 2 refers to 'a' value
 multiplyByTwo(10); // here 10 refers to 'b' value
 
