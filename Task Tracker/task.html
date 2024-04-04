@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Tracker</title>
+        <script src="taskTracker.js"></script>
+        <link rel="stylesheet" href="taskTracker.css">
+    </head>
+    <body> 
+        <div class="main_container">
+            <div class="header_container">
+                <h2><b>Task Tracker</b></h2>
+                <h4 style=" font-size:medium;">v2.0</h4>
+            </div>
+            <div class="task_container">
+                <div class="taskinput">
+                    <div id="create_task_header">
+                        <b>Create a Task</b>
+                    </div>
+                    <div>
+                        <label for="task_name" id="name">Task Name </label><br>
+                        <input type="text" id="task_name" required minlength="3" maxlength="50">
+                    </div>
+                    <div>
+                        <label for="task_date">Date </label><br>
+                        <input type="date" id="task_date" required min="yyyy-MM-dd">
+                    </div>
+                    
+                    <div>
+                        <label for="task_assigned_to">Assigned To </label>
+                        <input type="text" id="assigned_to" required><br>
+                    </div>
+                    
+                    <button type="submit" id="submit_btn">Submit</button>
+                </div>
+                <div class="taskinput">
+                    <div id="create_task_header">
+                        <b>Existing Task</b>
+                    </div>
+                    <div>
+                        <table class="display-tasks"></table>
+                    </div>
+                    
+                </div>
+            </div>           
+        </div>        
+    </body>
+</html>
