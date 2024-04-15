@@ -11,7 +11,7 @@ $(document).ready(function(){
         console.log($(this).val());
     });
     $("#registration_form").submit(function(event) {
-        event.preventDefault();
+        event.preventDefault(); 
         console.log("Form Successfully Submitted!");
     })
 });
