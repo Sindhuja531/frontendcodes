@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script> 
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <p id="p1">Hover me!</p>
+    <p id="p2">Clicked me!</p>
+    <p id="p3">Double click me!</p>
+    <p id="p4">Leave me!</p>
+    <p>Press [enter]</p>
+
+    <script>
+        $(document).ready(function() {
+            $("#p1").hover(function() {
+                $(this).hide();
+            });
+
+            $("#p2").click(function() {
+                $(this).hide();
+            });
+            $("#p3").dblclick(function() {
+                $(this).hide();
+            });
+            $("#p3").mouseout(function() {
+                $(this).hide();
+            });
+            var menuTrigger = false;
+            $(document).keypress(function(e) {
+                if(e.which == 13) {
+                    if(menuTrigger === false) {
+                        $("nav").fadeIn(500);
+                        menuTrigger = true;
+                    }
+                    else if (menuTrigger === true) {
+                        $("nav").fadeOut(500);
+                        menuTrigger = false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

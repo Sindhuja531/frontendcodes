@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipe App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="header">
+                <div class="container">
+                    <h1>Recipe App</h1>
+                    <p>Add Recipies that never before</p>
+                </div>
+            </div>
+        
+            <div class="actions">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-8">
+                            <input type="text" id="filter-recepies" placeholder="Filter Recepies" class="form-control"/>
+                        </div>
+                        <div class="col-sm-8 col-4">
+                            <button id="add-recepie" class="btn btn-primary" style="float: right;">Add Recepie</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="recepies"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-10">
+                        <p>Designed and Developed by Bushan Sirgur (c) <a href="https://bushansirgur.in">B2 Tech</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/uuidv4.js"></script>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/recepie-app.js"></script>
+    </div>
+</body>
+</html>

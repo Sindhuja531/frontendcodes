@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p,
+li {
+    font-size: 20px;
+    margin: 20px;
+}
+
+main {
+    padding: 0 10%;
+}
+
+.tagline {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.list_link {
+    font-size: 25px;
+    font-weight: 600;
+    color: #101010;
+    text-decoration: none;
+}
+
+.header,
+.table_of_content,
+.article {
+    /* border-bottom: 1px solid grey; */
+}
+
+.header {
+    text-align: center;
+    padding: 338px 0;
+    background-image: url("../images/laptop.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.table_of_content {
+    padding-bottom: 20px;
+}
+
+.table_list {
+    list-style: none;
+}
+
+.article_image {
+    text-align: center;
+}
